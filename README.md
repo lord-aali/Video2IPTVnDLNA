@@ -49,6 +49,15 @@ flowchart LR
 
 Grab the latest binary for your platform from the [Releases](https://github.com/lord-aali/Video2IPTVnDLNA/releases) page.
 
+| Platform | Binary |
+|----------|--------|
+| Windows 64-bit | `video2iptvndlna-windows-amd64.exe` |
+| Windows 32-bit | `video2iptvndlna-windows-386.exe` |
+| Linux 64-bit | `video2iptvndlna-linux-amd64` |
+| Linux 32-bit | `video2iptvndlna-linux-386` |
+| Linux ARM64 | `video2iptvndlna-linux-arm64` |
+| Linux ARMv7 | `video2iptvndlna-linux-armv7` |
+
 ### Windows
 
 ```powershell
