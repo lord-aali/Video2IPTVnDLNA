@@ -11,7 +11,6 @@ Serve videos from a local folder as **IPTV channels** (M3U playlist) and as a **
 - **Recursive scan** — optionally include videos in subdirectories with `-r`
 - **Configurable port** — default `8080`, change with `-port`
 - **Custom DLNA name** — set the name shown on TVs with `-name`
-- **Cross-platform** — pre-built binaries for Windows, Linux (amd64, 386, arm64, armv7)
 
 ### Supported video formats
 
@@ -24,16 +23,16 @@ flowchart LR
   subgraph shared [Shared]
     Folder[Video folder]
     Scanner[listVideos]
-    HTTP[/videos/ HTTP server]
+    HTTP["/videos/ HTTP server"]
   end
 
   subgraph iptv [IPTV]
-    M3U[/playlist.m3u]
+    M3U["/playlist.m3u"]
   end
 
   subgraph dlna [DLNA]
     SSDP[SSDP discovery]
-    UPnP[UPnP SOAP + DIDL-Lite]
+    UPnP["UPnP SOAP + DIDL-Lite"]
   end
 
   Folder --> Scanner
